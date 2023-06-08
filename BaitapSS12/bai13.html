@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        /* B0: khai báo tạo biến total=0
+        Bước 1: tạo vòng lặp vô hạn với do while (true)
+        Bước 2: Nhập 1 số number
+        B3: Kiếm tra số number
+        3.1 Nếu number>0 =>tính tổng thì total+=number
+        3.2 Nếu number<0 dùng break
+        B4: In ra tổng
+        
+        */
+    
+        
+        // Khai báo tính tổng
+        let total = 0;
+        // Vòng lặp vô hạn
+        do {
+            // Nhập 1 số
+            let number = Number(prompt("Nhập 1 số"));
+            // Kiểm tra số number
+            if (number >= 0) {
+                // Kiểm tra >=0
+                total += number;
+            } else{
+                break;
+            }
+        } while (true);
+        // In ra tính tổng
+        console.log("Tổng là" + total);
+
+    </script>
+</body>
+
+</html>

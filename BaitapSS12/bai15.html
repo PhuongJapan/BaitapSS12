@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*
+        input: số tiền gửi amount, rate lãi suất, tháng gửi month,
+
+        output: latestAmount, interest
+        B1: Nhập số tiền gửi amount, lãi suất năm -rate, số tháng -month
+        B2 Tính lãi suất tháng rateMonth = rate/12
+        B3: Tổng số tiền lãi: interest = 0;
+        B4: Duyệt các tháng gửi- tính tiền lãi hàng tháng
+         dùng for
+         4.1 Tính lãi: interestMonth = rateMonth*amount
+         4.2 Lãi nhập gốc : amount = amount+interestMonth
+         4.3 cộng dồn tiền lãi: interest+=interestMonth
+        B5: In ra số tiền nhận được và tổng lãi sau khi kết thúc gửi
+        5.1 Tiền nhận sau cùng amount
+        5.2 Tiền lãi sau cùng interest
+    */
+
+    let amount = Number(prompt("Nhập số tiền gửi"));
+    let rate = Number(prompt("Nhập lãi suất năm"));
+    let months = Number(prompt("Nhập số tháng gửi"));
+    let rateMonth = rate/12;
+    let interest = 0;
+    for (let months = 1; months <= 12; months++) {
+        interestMonth = rateMonth*amount/100;
+        amount+= interestMonth;
+        interest+=interestMonth;
+        
+    }
+    console.log("Số tiền cuối cùng nhận được là" + amount);
+    console.log(+ "Số tiền lãi là" + interest);
+    
+
+    
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+//         .Viết chương trình lặp lại các số nguyên từ 1 đến 100. Nhưng đối với 
+// bội số của ba in "Fizz" thay vì số và đối với bội số của năm in 
+// "Buzz". Đối với bội số của cả ba và năm in ra "FizzBuzz"
+
+        // Duyệt các số từ 1-100
+        // Kiểm tra chia hết cho 3
+        // Kiếm tra chia hết cho 5
+        // In ra kết quả
+
+        for (let i = 0; i <=100; i++) {
+            let checkFizz = false;
+            if(i%3==0){
+                checkFizz = true;
+            }
+            let checkFizz = false;
+            if (i%5==0) {
+                checkBuzz = true;
+                
+            }
+            if(checkFizz&&!checkBuzz){
+                console.log("Fizz");
+            } else if(!checkFizz&&checkBuzz){
+                console.log("Buzz");
+            } else if(checkFizz && checkBuzz){
+                console.log("FizzBuzz");
+            }
+    
+        }
+    </script>
+</body>
+</html>

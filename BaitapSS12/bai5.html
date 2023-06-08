@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài tập 2</title>
+</head>
+<body>
+    <script>
+        let scoreHtml = Number(prompt("Nhập số điểm HTML"));
+        let scoreCss = Number(prompt("Nhập số điểm CSS"));
+        let scoreJavascript = Number(prompt("Nhập số điểm Javascript"));
+        let result = (scoreHtml + scoreCss + scoreJavascript)/3;
+
+        if (result < 5){
+            console.log("Xếp loại:Yếu");
+        }
+        else if (result < 6){
+            console.log("Xếp loại:Kém");
+        }
+        else if (result < 7){
+            console.log("Xếp loại:Trung bình");
+        }
+        else if (result < 8){
+            console.log("Xếp loại:Khá");
+        }
+        else if (result < 9){
+            console.log("Xếp loại:Giỏi");
+        }
+        else{
+            console.log("Xếp loại:Xuất sắc");
+        }
+
+
+
+    </script>
+    
+</body>
+</html>

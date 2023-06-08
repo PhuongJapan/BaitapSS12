@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        /*
+        B1: Nhap so n
+        B2: Duyet các số từ 1-n =>for(index)
+        B3: Dat cờ checkPrime = true (là số nguyên tố)
+        kiem tra index có phải nguyên tố hay ko
+        duyệt từ 2=>sqrt(index) (i)
+        index%i=0=>checkPrime = false(không phải số nguyên tố)
+        break khỏi vòng i (i)
+        B5: Nếu checkPrime == true => In ra số nguyên tố
+        */
+        let n = Number(prompt("Nhập 1 số"));
+        // Duyệt từ 1 đến n
+        for (let i = 2; i < n; i++) {
+            // Kiểm tra i có phải số nguyên tố không
+            // Khai báo cờ để phân biệt số nguyên tố
+            let checkPrime = true;
+            // Nếu cờ là true thì là số nguyên tố
+            for (let j = 2; j <= Math.sqrt(i); j++) {
+                // Kiểm tra xem j có phải ước của i hay ko
+                if (i % j == 0) {
+                    checkPrime = false;
+                    break;
+                    // break để thoát vòng lặp j ko cần tìm ước khác
+                }
+            }
+            if (checkPrime) {
+                // viết checkPrime hiểu là ==true
+                console.log(i);
+            }
+        }
+
+
+
+
+
+
+        if (n > 1) {
+            for (let index = 2; index < n; index++) {
+                let checkPrime = true;
+
+                for (let i = 2; i <= Math.sqrt(index); i++) {
+                    if (index % i == 0) {
+                        checkPrime = false;
+                        break;
+
+                    }
+
+                }
+
+            } if (checkPrime) {
+
+            }
+
+        }
+        else {
+            console.log("Không có số nguyên tố nào");
+        }
+
+
+
+        let checkPrime = true;
+        {
+
+
+        }
+
+        let n = Number(prompt("Nhap vao so n"));
+        if (n > 1) {
+            for (let index = 2; index < n; index++) {
+                let checkPrime = true;
+                for (let i = 2; i <= Math.sqrt(index); i++) {
+                    if (index % i == 0) {
+                        checkPrime = false;
+                        break;
+                    }
+
+                }
+                if (checkPrime) {
+                    console.log(indexedDB);
+
+                }
+            }
+        } else {
+            alert("Khong co so nguyen to nao");
+        }
+
+    </script>
+</body>
+
+</html>

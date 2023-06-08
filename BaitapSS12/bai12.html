@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // var n = parseInt(prompt("Nhập vào số nguyên n:"));
+        // var reverse = 0;
+
+        // while (n !== 0) {
+        //     var digit = n % 10; // Lấy chữ số cuối cùng
+        //     reverse = reverse * 10 + digit; // Đảo ngược số bằng cách nhân 10 và cộng chữ số cuối cùng
+        //     n = Math.floor(n / 10); // Loại bỏ chữ số cuối cùng
+        // }
+
+        // console.log("Số đảo ngược của", n, "là:", reverse);
+        
+        // let n = Number(prompt("Nhập số nguyên n:"));
+        // let reversedNumber = 0;
+        // for (; n !== 0; n = Math.floor(n / 10)) {
+        //     let digit = n % 10; // Lấy chữ số cuối cùng của n
+        //     reversedNumber = reversedNumber * 10 + digit; // Cộng chữ số vào reversedNumber (tạo số đảo ngược)
+        // }
+
+        // console.log("Số đảo ngược của " + n + " là " + reversedNumber);
+
+        /*input: abc...n 123456
+        output: n...cba
+        giải pháp tách từng chữ số :
+        vòng 1: 6 =>reveredNumber = "6"
+        vòng 2: 5 =>reveredNumber = "65"
+        vòng 3: 4
+        ....
+        sử dụng vòng while (number>0)
+
+        */
+       let number = Number(prompt("Nhập vào 1 số nguyên"));
+        let result= "";
+        let i;
+       while (number>0) {
+        i = number%10;
+        number = Math.floor(number/10);
+        result+=i;
+       
+       }
+       document.write("Số đảo ngược là: " + result);
+
+    </script>
+</body>
+
+</html>

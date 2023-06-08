@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+
+<body>
+    <script>
+
+
+        
+        for (let n = 100; n < 999; n++) {
+            let tram = Math.floor(n / 100);
+            let chuc = Math.floor((n % 100) / 10);
+            let donvi = n % 10;
+            if(        
+            Math.pow(tram, 3) + Math.pow(chuc, 3) + Math.pow(donvi, 3) == n)
+       { console.log(n);
+        }
+    }
+     
+//         for (let number = 101; number < 1000; number++) {
+//   var firstNumber = number % 10;
+//   var secondNumber = Math.floor(number / 10) % 10;
+//   var thirdNumber = Math.floor(number/100) % 10;
+//   if (
+//     Math.pow(firstNumber, 3) +
+//       Math.pow(secondNumber, 3) +
+//       Math.pow(thirdNumber, 3) ==
+//     number
+//   ) {
+//     console.log(number);
+//   }
+// }
+
+    </script>
+</body>
+
+</html>

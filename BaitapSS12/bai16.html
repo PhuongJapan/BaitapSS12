@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Nhap vao 3 số number 1, 2,3
+        // Tính tích của 3 số result
+        // result < 0 thì in ra số âm
+        // nếu result > 0 thì in ra dấu cộng
+        // Nếu result = 0 thì in 
+        let number1 = Number(prompt("Nhập số thứ nhất"));
+        let number2 = Number(prompt("Nhập số thứ hai"));
+        let number3 = Number(prompt("Nhập số thứ ba"));
+
+        let result = number1*number2*number3;
+        if (result<0) {
+            console.log("Dấu của tích 3 số là -");
+            
+        }else if(result>0){
+            console.log("Dấu của tích 3 số là +");
+
+        }else{
+            console.log("Tích 3 số là 0");
+        }
+
+    </script>
+</body>
+</html>
